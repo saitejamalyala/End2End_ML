@@ -28,6 +28,6 @@ jobs:
     - name: Train script check
       run : |
         python train.py
-    - name: Test with pytest
-      run: |
-        pytest
+#    - name: Test with pytest
+#      run: |
+#        pytest
