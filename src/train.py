@@ -1,6 +1,7 @@
 import sys
-sys.path.append('../')
-from End2End_ML import create_dataset,create_feat_dataset
+sys.path.append('.././')
+from End2End_ML.src import create_dataset,create_feat_dataset
+
 from End2End_ML import config
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score,mean_squared_error

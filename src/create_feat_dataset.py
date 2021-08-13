@@ -4,7 +4,7 @@ import pandas as pd
 from pandas import DataFrame
 from pathlib import Path
 from seaborn import heatmap
-from . import config
+from .. import config
 from matplotlib import pyplot as plt
 from sklearn.ensemble import ExtraTreesRegressor
 

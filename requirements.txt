@@ -1,4 +1,5 @@
 pyyaml
+pytest
 pandas
 streamlit
 scikit-learn
