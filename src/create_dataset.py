@@ -52,7 +52,7 @@ def clean_Data(df:DataFrame):
         clean_df['No_Years'] = config['current_year']-clean_df['Year']
 
         #Drop year column as we have no need of it
-        clean_df.drop(['Year'],axis=1,inplace=True)  
+        #clean_df.drop(['Year'],axis=1,inplace=True)  
 
         #Save the clean data frame
         clean_df.to_csv(os.path.join(os.getcwd(),*config['clean_data_path']),index=False)  
