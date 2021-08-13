@@ -22,14 +22,12 @@ def load_raw_data()->DataFrame:
     df=pd.read_csv(data_path)
     return df 
 
-def clean_Data(df:DataFrame)->DataFrame:
+def clean_Data(df:DataFrame):
     """Clean the raw data fram, remove unwanted columns and nans
 
     Args:
         df (DataFrame): Raw data frame
 
-    Returns:
-        DataFrame: Cleaned pandas data frame object
     """
     
     # Drop rows with missing values
