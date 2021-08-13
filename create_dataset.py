@@ -2,11 +2,11 @@ import pandas as pd
 from pandas import DataFrame
 from pathlib import Path
 import os
-"""import sys
-sys.path.append('../')
+#import sys
+#sys.path.append('../')
 from End2End_ML import config
-"""
-from . import config
+
+#from . import config
 
 #is data set file exists
 #add a row with zeros and check if clean)data works
