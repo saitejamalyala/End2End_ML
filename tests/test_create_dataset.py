@@ -19,7 +19,7 @@ class TestCreateDataset(TestCase):
         clean_data_path = os.path.join(os.getcwd(),*config['clean_data_path'])
         self.assertTrue(os.path.isfile(clean_data_path))
 
-        
+    
 
 if __name__ == '__main__':
     unittest.main()
