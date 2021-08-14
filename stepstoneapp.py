@@ -6,8 +6,8 @@ import pickle
 import datetime
 from PIL import Image
 
-GB_model_file = os.path.join(os.getcwd(),'assets','models','sweep','GradientBoostingRegressor_rmse_1.00_r2_0.92.pkl')
-RF_model_file = os.path.join(os.getcwd(),'assets','models','RandomForestRegressor_rmse_1.91_r2_0.72.pkl')
+GB_model_file = os.path.join(os.getcwd(),'assets','models','production','GradientBoostingRegressor_rmse_1.00_r2_0.92.pkl')
+RF_model_file = os.path.join(os.getcwd(),'assets','models','production','RandomForestRegressor_rmse_1.91_r2_0.72.pkl')
 model = 'Gradient Boosting Regressor'
 feat_data = np.asarray([2015,2.52,25000,1,6,1,0,0,1]).reshape(1,-1)
 
