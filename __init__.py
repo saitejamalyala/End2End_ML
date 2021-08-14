@@ -5,4 +5,7 @@ def load_config(config_path):
         config = yaml.safe_load(f)
     return config
 
-config = load_config('config-defaults.yaml')
+config = load_config('config.yaml')
+
+
+sweep_config = load_config('sweep.yaml')

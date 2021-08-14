@@ -1,0 +1,36 @@
+raw_data_path: [assets,raw_data,car_data.csv]
+clean_data_path: [assets,raw_data,clean_car_data.csv]
+model_path: [assets,models]
+sweep_model_path: [assets,models,sweep]
+current_year: 2021
+
+feat_data_set_stats: [assets,feat_data,feat_stats.csv]
+feat_importances: [assets,feat_data,feat_imp.csv]
+feat_importance_plot: [assets,feat_data,feat_imp.jpg]
+ds_features: [assets,feat_data,features.csv]
+ds_target: [assets,feat_data,targets.csv]
+
+random_seed: 2020
+
+#Hyperparameters tuning in Random Forest
+
+# Number of trees in random forest
+
+n_estimators : 1500 #[100,200,300,400,500,600,700,800,900,1000,1100,1200,1300]
+# Number of features to consider at every split
+max_features : auto #[auto, sqrt]
+# Maximum number of levels in tree
+max_depth : 30 #[5, 10, 15, 20, 25, 30]
+# max_depth.append(None)
+# Minimum number of samples required to split a node
+min_samples_split : 20 #[2, 5, 10, 15, 100]
+# Minimum number of samples required at each leaf node
+min_samples_leaf :  6 #[1, 2, 5, 10]
+# warm start
+warm_start : False
+learning_rate: 0.1
+
+n_neighbors: 5
+
+model_name:  GradientBoostingRegressor #RandomForestRegressor,GradientBoostingRegressor,AdaBoostRegressor,DecisionTreeRegressor,KNeighborsRegressor,GaussianNB #rf,gradboost,adaboost
+

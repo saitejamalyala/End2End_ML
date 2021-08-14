@@ -1,0 +1,54 @@
+method: bayes
+metric:
+  goal: minimize
+  name: Step
+parameters:
+  max_depth:
+    distribution: int_uniform
+    max: 40
+    min: 5
+  max_features:
+    distribution: categorical
+    values:
+    - auto
+    - sqrt
+  min_samples_leaf:
+    distribution: int_uniform
+    max: 10
+    min: 1
+  min_samples_split:
+    distribution: int_uniform
+    max: 20
+    min: 3
+  n_estimators:
+    distribution: int_uniform
+    max: 3500
+    min: 550
+
+#  learning_rate: 
+#    distribution: uniform
+#    max: 0.8
+#    min: 0.05
+
+#  n_neighbors: 
+#    distribution: int_uniform
+#    max: 15
+#    min: 5
+
+#  model_name:
+#    distribution: categorical
+#    values:
+#    - ElasticNet 
+#    - RandomForestRegressor
+#    - GradientBoostingRegressor
+#    - AdaBoostRegressor
+#    - DecisionTreeRegressor
+#    - KNeighborsRegressor
+#    - Ridge
+
+program: .\src\sweep_train.py
+command:
+  - C:\Users\Teja\Documents\_INFOTECH\jobs\stepstone_demo\env_end2endml\Scripts\python.exe
+  - ${program}
+
+
