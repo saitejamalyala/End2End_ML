@@ -1,4 +1,4 @@
-name: streamlit application
+name: docker build 
 
 on:
   push:
@@ -22,4 +22,5 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Check docker image build status
       run: |
-        docker build -f Dockerfile -t stepstoneapp:latest
+        cd app/
+        docker build -f Dockerfile -t stepstoneapp:latest .
