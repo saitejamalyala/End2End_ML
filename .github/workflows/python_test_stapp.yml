@@ -22,7 +22,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: streamlit web app check
       run : |
-        streamlit app/stepstoneapp.py
+        streamlit run app/stepstoneapp.py
     #- name: Check docker image build status
     #  run: |
     #    docker build -f Dockerfile -t stepstoneapp:latest
