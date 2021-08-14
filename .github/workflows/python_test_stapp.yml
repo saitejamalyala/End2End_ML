@@ -1,4 +1,4 @@
-name: Python application
+name: streamlit application
 
 on:
   push:
@@ -20,9 +20,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas scikit-learn matplotlib seaborn streamlit
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: streamlit web app check
-      run : |
-        streamlit run app/stepstoneapp.py
-    #- name: Check docker image build status
-    #  run: |
-    #    docker build -f Dockerfile -t stepstoneapp:latest
+    - name: Check docker image build status
+      run: |
+        docker build -f Dockerfile -t stepstoneapp:latest
