@@ -123,9 +123,11 @@ st.write(feat_data)
 
 #Year	Present_Price	Kms_Driven	Owner	No_Years	Fuel_Type_Diesel	Fuel_Type_Petrol	Seller_Type_Individual	Transmission_Manual
 st.subheader('Prediction Model')
-if st.radio(label='Model',options=['Gradient Boosting Regressor', 'Random Forest Regressor'],key='mlmodel') == 'Gradient Boosting Regressor':
+model = st.radio(label='Model',options=['Gradient Boosting Regressor', 'Random Forest Regressor'],key='mlmodel')
+
+if model == 'Gradient Boosting Regressor':
     model = GB_model
-elif st.radio(label='Model',options=['Gradient Boosting Regressor', 'Random Forest Regressor'],key='mlmodel') == 'Random Forest Regressor':
+elif model == 'Random Forest Regressor':
     model = RF_model
 
 def predict_callback():
