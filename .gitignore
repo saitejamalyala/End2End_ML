@@ -128,7 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-assets/models/*
+
+/assets/models/*
+!/assets/models/production
+
 assets/raw_data/*
 salary_prediction.ipynb
 wandb

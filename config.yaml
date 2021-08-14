@@ -1,7 +1,7 @@
 raw_data_path: [assets,raw_data,car_data.csv]
 clean_data_path: [assets,raw_data,clean_car_data.csv]
-model_path: [assets,models]
-sweep_model_path: [assets,models,sweep]
+model_path: [assets,models,production]
+sweep_model_path: [assets,models,production]
 current_year: 2021
 
 feat_data_set_stats: [assets,feat_data,feat_stats.csv]
