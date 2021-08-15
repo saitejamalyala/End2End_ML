@@ -18,7 +18,7 @@ Data set used for the project is [Job Salary Prediction competition](https://www
 
 ## To train the model :
 1. [Download the data](https://www.kaggle.com/c/job-salary-prediction/data)
-2. Modify SETTINGS.json to point to the training and validation data on your system, as well as a place to save the trained model and a place to save the submission
+2. Modify the configuration according to needs in `config.yaml`
 3. Train the model by running `python src/train.py`
 ---
 ## Experiments and artifacts(Code, data, model) tracking using weights and biases
