@@ -63,3 +63,4 @@ def predict_selling_price(data: SellingPrice):
 """
 if __name__ == '__main__':
     uvicorn.run(app, host='127.0.0.0', port=8000)
+#uvicorn main:app --reload (main is the file name app is FastApi oj=bject)
