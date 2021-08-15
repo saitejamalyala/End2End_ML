@@ -17,7 +17,7 @@ Data set used for the project is [Job Salary Prediction competition](https://www
   ```
 
 ## To train the model :
-1. [Download the data](https://www.kaggle.com/c/job-salary-prediction/data)
+1. [Download the data](https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho)
 2. Modify the configuration according to needs in `config.yaml`
 3. Train the model by running `python src/train.py`
 ---
