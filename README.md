@@ -34,7 +34,6 @@ Data set used for the project is [Job Salary Prediction competition](https://www
 10. [Docker build workflow](https://github.com/saitejamalyala/End2End_ML/blob/main/.github/workflows/python_test_stapp.yml) to check if docker image building is successful after every push/pull.
 ---
 ## Deploying the model using an webapp
-#### Check the experiments and seeps here
 11. Make predictions on the validation set by running `python src/predict.py`
 12. To run the streamlit app `streamlit run src/app.py`
 13. After 5 open the [Browser](http://localhost:8501/) if you are running in your local machine or check step 14
