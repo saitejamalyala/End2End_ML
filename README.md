@@ -22,7 +22,7 @@ Data set used for the project is [Vehicle dataset from kaggle](https://www.kaggl
 3. Train the model by running `python src/train.py`
 ---
 ## Experiments and artifacts(Code, data, model) tracking using weights and biases
-4. After step3, you will be prompted to enter wandb login details to track the experiments, metrics and artifcats
+4. After step 3, you will be prompted to enter wandb login details to track the experiments, metrics and artifcats
 5. For hyper parameter sweep run  ``` wandb agent username/project-name/sweepcode ```
 6. Check previous experiments and sweeps [here](https://wandb.ai/saitejam/stepstone-demo/sweeps/z605w0e2)
 7. Check model artifacts with versioning [here](https://wandb.ai/saitejam/stepstone-demo/artifacts/models/trained_model/1c93794f899d85543a6f/files) 
@@ -36,7 +36,7 @@ Data set used for the project is [Vehicle dataset from kaggle](https://www.kaggl
 ## Deploying the model using an webapp
 11. Make predictions on the validation set by running `python src/predict.py`
 12. To run the streamlit app `streamlit run src/app.py`
-13. After 5 open the [Browser](http://localhost:8501/) if you are running in your local machine or check step 14
+13. After step 12 open the [browser](http://localhost:8501/) if you are running in your local machine or check step 14
 14. Check the [public app](https://share.streamlit.io/saitejamalyala/end2end_ml/main/app/stepstoneapp.py)
 
 ## Serving model using FAST API
@@ -47,6 +47,7 @@ Data set used for the project is [Vehicle dataset from kaggle](https://www.kaggl
   ```
   uvicorn main:app -reload
   ```
+16. [check on local host](http://127.0.0.1:8000/docs)
 
 ## Building Docker Image
 16. Configure the Docker image by editing the `Dockerfile` 
