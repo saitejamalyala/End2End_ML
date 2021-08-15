@@ -53,6 +53,7 @@ image_main = Image.open(os.path.join(os.getcwd(),'assets','images','main.jpg'))
 
 st.image(image_main,caption='copyright: https://autoportal.com/articles/valuation-of-used-cars-how-you-can-do-it-best-1883.html')
 
+st.write('---')
 st.sidebar.header('User Data Input')
 
 def user_inputs()->np.ndarray:
@@ -122,6 +123,7 @@ st.write(feat_data)
 
 
 #Year	Present_Price	Kms_Driven	Owner	No_Years	Fuel_Type_Diesel	Fuel_Type_Petrol	Seller_Type_Individual	Transmission_Manual
+st.write('---')
 st.subheader('Prediction Model')
 model = st.radio(label='Model',options=['Gradient Boosting Regressor', 'Random Forest Regressor'],key='mlmodel')
 
@@ -131,8 +133,11 @@ elif model == 'Random Forest Regressor':
     model = RF_model
 
 def predict_callback():
+    st.write('---')
+
     st.write("""
-    ### Predicted Selling Price : {}""".format(predict_price(model, feat_data)))
+    ### Predicted Selling Price : {}""".format(round(predict_price(model, feat_data),4)))
+    st.write('---')
 
 if st.button('Predict'):
     predict_callback()
