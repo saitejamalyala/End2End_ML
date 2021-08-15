@@ -3,7 +3,7 @@ Used Car Prediction
 ==============================
 
 # Instructions
-This repo contains sample code for the End to End machine learning For used car price prediction.
+This repo contains sample code for the End to End machine learning for used car price prediction.
 Data set used for the project is [Job Salary Prediction competition](https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho)
 
 - Suggested to try the project by creating a virtual environment
